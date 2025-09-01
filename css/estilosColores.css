@@ -1,0 +1,279 @@
+html,body{
+    font-family: 'Rajdhani', sans-serif;
+    background-color: #0d0d0d; 
+    margin: 0px;
+    color: #e6e6e6;
+    height: 100%; 
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+main{
+    flex: 1;
+}
+
+footer {
+    margin-top: auto; 
+}
+
+header li a {
+    font-weight: 700;
+}
+
+header li a:hover{
+    color: #a5ff14 ;
+    transition: color 0.3s ease;
+
+}
+
+header{
+    background-color: #6a0dad;
+    padding: 15px;
+}
+
+
+footer{
+    background-color: #6a0dad ;
+    color: #e6e6e6;
+    padding: 10px;
+    margin-top: 30px;
+    font-weight: 700;
+   
+}
+
+section{
+    margin: 30px 30px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #e6e6e6;
+    font-weight: 500;
+}
+
+.episodes-container{
+    display: flex;
+}
+
+.links-container ul {
+    margin: 10px 0 0 18px;
+    padding: 0;
+  
+}
+
+
+.links-container a {
+    color: #a5ff14;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+.info-container {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.links-container{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.info-col-6 img {
+    max-width: 100%;
+    border-radius: 12px;
+}
+
+.info-col-6 .text-box{
+    background: rgba(255,255,255,0.05);
+    padding: 15px;
+    border: 6px double #965FD4;
+    border-radius: 0px;
+
+}
+
+
+
+/* Contacto */
+
+.contact-form{
+    background: rgba(255,255,255,0.05);
+    border: 6px double #965FD4;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 45%;
+    gap: 1.5rem;
+}
+
+.form-input{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-input label{
+    font-weight: bold;
+    color: #a5ff14;
+}
+
+.contact-form input[type=text],
+.contact-form input[type=number],
+.contact-form textarea {
+    padding: 0.8rem;
+    border-radius: 6px;
+    border: 1px solid #333;
+    background: #0d0d0d;
+    color: #e6e6e6;
+    font-size: 1rem;
+}
+
+.btn-primary{
+    background: #a5ff14;
+    color: #0d0d0d;
+    font-weight: bold;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-primary:hover{
+    background: #8ed112;
+}
+
+/* Personajes */
+
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 6px double #965FD4;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.25s ease;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    border-color: #a5ff14;
+}
+
+.card img {
+    width: 100%;
+    height: 220px;         
+    object-fit: contain;    
+    display: block;
+}
+
+.card h3 {
+    margin: 14px 16px 6px;
+    font-family: 'Cinzel', serif;
+    color: #e6e6e6;
+    font-size: 1.25rem;
+}
+
+.card:hover h3{
+    color: #a5ff14;
+}
+
+.card p {
+  margin: 0 16px 16px;
+  color: #cfcfcf;
+  line-height: 1.45;
+}
+
+/* Episodios */
+
+.episodios-layout{
+    display: flex;
+    gap: 28px;
+    padding-top: 28px;
+    align-items: flex-start;
+}
+
+.episodios-list{
+    flex: 0 0 280px;           
+    background: rgba(255, 255, 255, 0.04);
+    border: 6px double #965FD4;
+    padding: 18px;
+    position: sticky;
+    top: 24px; 
+    height: fit-content;
+}
+
+.episodios-list ol {
+    margin: 10px 0 0 18px;
+    padding: 0;
+  
+}
+
+
+.episodios-list a {
+    color: #a5ff14;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+.episodios-main{
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.episodio-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 6px double #965FD4;
+    padding: 16px;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.35);
+    transition: all 0.18 ease;
+    scroll-margin-top: 90px; 
+}
+
+.episodio-card:hover {
+    transform: translateY(-4px);
+    border-color: #a5ff14;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; 
+    border-radius: 8px;
+    overflow: hidden;
+    background: #000;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
