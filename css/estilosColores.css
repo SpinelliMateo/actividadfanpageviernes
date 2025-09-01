@@ -250,7 +250,7 @@ nav a {
     border: 6px double #965FD4;
     padding: 16px;
     box-shadow: 0 8px 22px rgba(0,0,0,0.35);
-    transition: all 0.18 ease;
+    transition: all 0.25s ease;
     scroll-margin-top: 90px; 
 }
 
